@@ -1,0 +1,239 @@
+body {
+    padding: 100px 150px;
+    font-family: Inter;
+}
+p {
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: hsl(236, 13%, 42%);
+}
+header ul li {
+    margin-left: 35px;
+}
+header ul li:hover {
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+#close {
+    display: none;
+}
+#menu {
+    display: none;
+}
+#main-page {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#main-page-article {
+    width: 80%;
+    margin-right: 20px;
+}
+#main-page-article img {
+    width: 100%;
+}
+#main-page-heading {
+    display: flex;
+    align-items: flex-start;
+}
+#main-page-heading h1 {
+    font-size: 40px;
+    font-weight: 800;
+    width: 250px;
+}
+#main-page-heading #empty {
+    height: 150px;
+    width: 6px;
+    border: none;
+    box-shadow: -10px 2px 45px hsl(35, 77%, 62%);
+    margin-left: 30px;
+}
+#main-page-heading div {
+    margin: 30px 10px 0px;
+}
+#main-page-heading div p {
+    font-size: 12px;
+    width: 300px;
+    color: hsl(236, 13%, 42%);
+    font-weight: 400;
+}
+#main-page-heading div button {
+    width: 120px;
+    height: 40px;
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    border: none;
+    letter-spacing: 3px;
+    font-size: 9px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+#main-page-heading div button:hover {
+    cursor: pointer;
+    background-color: hsl(240, 100%, 5%);
+}
+#main-page-aside {
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    width: 30%;
+    height: auto;
+    padding: 10px 20px;
+}
+.main-page-aside-content {
+    margin: 25px 0px;
+}
+.main-page-aside-content h1 {
+    color: hsl(35, 77%, 62%);
+    font-size: 30px;
+}
+.main-page-aside-content h3 {
+    font-size: 15px;
+}
+.main-page-aside-content h3:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+.main-page-aside-content p{
+    color: hsl(236, 13%, 42%);
+    font-size: 12px;
+}
+#aside-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.other-news {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 50px 0px;
+}
+.other-news img {
+    width: 100px;
+    height: 120px;
+}
+.other-news div {
+    margin-left: 30px;
+}
+.other-news h1 {
+    font-size: 20px;
+    color: hsl(233, 8%, 79%);
+    line-height: 8px;
+}
+.other-news h3 {
+    font-size: 16px;
+}
+.other-news h3:hover {
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+.other-news p {
+    font-size: 12px;
+}
+#mobileImg {
+    display: none;
+}
+/*Mobile Device*/
+@media (max-width:375px) {
+    body {
+        padding: 100px 15px;
+    }
+    header {
+        align-items: center;
+    }
+    #main-page {
+        flex-direction: column;
+    }
+    #aside-page {
+        flex-direction: column;
+    }
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        right: 15px;
+    }
+    #menu {
+        display: flex;
+    }
+    header ul {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        color: hsl(236, 13%, 42%);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -300px;
+        padding: 80px 0 0 10px;
+        background-color: hsl(233, 8%, 79%);
+        transition: 0.5s ease-in;
+    }
+    /*header ul.active {
+        right: 0px;
+    }*/
+    header ul li {
+        margin-bottom: 35px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    #webImg {
+    display: none;
+    }
+    #main-page-article {
+        width: 100%;
+    }
+    #mobileImg {
+        display: initial;
+    }
+    #main-page-heading {
+        flex-direction: column;
+    }
+    #main-page-heading #empty {
+        display: none;
+    }
+    #main-page-heading h1 {
+        font-size: 40px;
+        width: 100%;
+    }
+    #main-page-heading div {
+        margin: 0px 10px 20px;
+    }
+    #main-page-heading div p {
+        font-size: 15px;
+        width: 100%;
+    }
+    #main-page-heading div button {
+        width: 150px;
+        font-size: 12px;
+    }
+    #main-page-aside {
+        width: 90%;
+        height: auto;
+        padding: auto;
+    }
+    .other-news {
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .other-news h3 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .other-news p {
+        font-size: 14px;
+    }
+}
